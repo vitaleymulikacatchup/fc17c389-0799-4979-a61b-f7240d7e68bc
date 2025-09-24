@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -14,12 +14,11 @@ export default function Home() {
         <NavbarBase 
           logoSrc="/images/logo.svg"
           logoAlt="Peak Logo"
-          logoClassName="h-10"
+          className="bg-transparent sticky top-0"
           leftButtonText=""
           rightButtonText="Contact Peak"
           onLeftButtonClick={() => {}}
           onRightButtonClick={() => {}}
-          className="bg-transparent sticky top-0"
         />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
@@ -63,7 +62,6 @@ export default function Home() {
           logoAlt="Peak Logo"
           logoText="Peak"
           className="footer-logo"
-          svgClassName="svg-footer"
         />
       </div>
     </SiteThemeProvider>
